@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: o;
+  background: #ccc;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 760px;
+  width: 90%;
+  margin: 5em auto;
+}
+
+/* HEAD STYLES */
+
+.antenna-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.antenna-rectangle {
+  width: 6px;
+  height: 30px;
+  background-color: goldenrod;
+}
+
+.antenna-top-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: orangered;
+}
+
+.antenna-bottom-circle {
+  width: 30px;
+  height: 15px;
+  border-radius: 100px 100px  0 0;
+  margin-bottom: -5px;
+  z-index: -1;
+  background-color: darkgrey;
+}
+
+.head {
+  background-color: grey;
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.8em;
+  margin-top: 15px;
+}
+
+.left-eye,
+.right-eye {
+  background-color: #fff;
+  border: 4px solid goldenrod;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.eyelid {
+  background-color: black;
+  width: 12px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.mouth {
+  display: flex;
+  align-items: center;
+  gap: 0.26em;
+  margin-bottom: 5px;
+}
+
+.lips {
+  width: 12px;
+  height: 12px;
+  background: goldenrod;
+}
+
+/* TRUNCK STYLES */
+
+.trunk-upperlimb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upperlimb {
+    display: flex;
+}
+
+.limbs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px -7px 0;
+}
+
+.arm, .forarm {
+    width: 12px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: goldenrod;
+}
+
+.elbow {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: darkred;
+}
+
+.hand {
+    background-color: dodgerblue;
+    width: 22px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.right-hand {
+    border-radius: 10px 8px 5px 0;
+}
+
+.left-hand {
+    border-radius: 8px 10px 0 5px;
+}
+
+.finger-right,.finger-left {
+    width: 7px;
+    height: 10px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.finger-right {
+    left: 9px;
+    top: 10px;
+}
+
+.finger-left {
+    left: 6px;
+    top: 10px;
+}
+
+.shoulder-joint {
+    background-color: darkred;
+    width: 8px;
+    height: 25px;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+
+.trunk {
+    width: 180px;
+    height: 120px;
+    margin: .25em 0;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+/* LOWER LIMBS STYLES */
+
+.lower-limbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+
+.thigh,
+.leg {
+  width: 30px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+.knee {
+  background-color: goldenrod;
+  height: 18px;
+  width: 45px;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+.feet {
+    background-color: darkred;
+    width: 50px;
+    height: 25px;
+    margin: -10px auto 0;
+    border-radius: 100px 100px 0 0;
+}
